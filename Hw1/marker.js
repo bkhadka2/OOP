@@ -1,4 +1,7 @@
 "use strict";
+
+//using unit test...
+
 class BadMarkerState
 {
     constructor(problem){
@@ -54,14 +57,69 @@ class Marker
     }
 }
 
+class MarkerTest
+{
+    blackMarker(){return new Marker("black");}
+    redMarker(){return new Marker("red");}
+
+    testDrawCappedBad()
+    {
+        var ok = false;
+        try
+        {
+            var black = this.blackMarker();
+            black.draw();
+        }
+        catch(err)
+        {
+            ok = true;
+        }
+        if(!ok)
+        {
+            throw "bad";
+        }        
+    }
+
+    testDrawUncappedOk()
+    {
+        var red = this.redMarker();
+        red.capped = false;
+        red.draw();
+    }
+
+    testBlackMarkerIsBlack()
+    {
+        var black = this.blackMarker();
+        if(black.color !== "black")
+        {
+            throw "bad";
+        }
+    }
+
+    testAll()
+    {
+        this.testBlackMarkerIsBlack();
+        this.testDrawCappedBad();
+        this.testDrawUncappedOk();
+    }
+}
+
+
+var testMarker = new MarkerTest();
+testMarker.testAll();
+/*
 var blackMarker = new Marker("black");
 var redMarker = new Marker ("red");
 
 blackMarker.draw();//bad idea
+redMarker.capped = false;
 redMarker.draw();
 
-redMarker.capped = false;
+
 console.log('I have a ' + blackMarker.color + 'Marker');
+*/
+
+
 
 
 
