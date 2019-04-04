@@ -2,11 +2,13 @@
 
 ## Homework-1 (EcmaScript)
 - It is in the folder "Hw-1:JavaScript"
+- [x]
 
 ## Homework-3 (C++)
 - It is in the folder "Hw-3:C++"
+- [x]
 
-https://github.com/bkhadka2/bkhadka2-OOP/blob/master/Hw1/marker.js
+
 
 
 
