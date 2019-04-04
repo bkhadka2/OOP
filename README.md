@@ -3,7 +3,8 @@
 ## Homework-1 (EcmaScript)
 - It is in the folder **Hw-1:JavaScript**
 - [x] Main Code
-- [ ] Test
+- [x] Test
+- [x] Screenshot of passing test
 
 ## Homework-3 (C++)
 
