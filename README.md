@@ -2,11 +2,11 @@
 
 ## Homework-1 (EcmaScript)
 - It is in the folder "Hw-1:JavaScript"
-- [x]
+- [ x ]
 
 ## Homework-3 (C++)
 - It is in the folder "Hw-3:C++"
-- [x]
+- [ x ]
 
 
 
