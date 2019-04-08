@@ -13,6 +13,7 @@ int main(int argc, const char ** argv)
     // Testing if the person's balance is less than 0;
     // If the person's balance is less than zero,program will terminate else continue.
     Bank obj(-100, "Bishal", 100);
+    obj.setBalance();
     int temp = obj.getBalance();
     assert(temp >= 0);
     cout << "Test Passed.. You don't have a negative balance" << endl;
