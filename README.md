@@ -10,7 +10,7 @@
 
 - It is in the folder **Hw-3:C++**
 - [x] Main Code
-- [ ] Test
+- [x] Test
 
 
 
