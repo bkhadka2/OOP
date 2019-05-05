@@ -16,7 +16,9 @@ int main(int argc, const char ** argv)
     obj.setBalance();
     int temp = obj.getBalance();
     assert(temp >= 0);
+    cout << "=================================================" << endl;
     cout << "Test Passed.. You don't have a negative balance" << endl;
+    cout << "=================================================" << endl;
 
     shared_ptr<Bank> ptr = make_shared<Bank> ();
     ptr->setName();
