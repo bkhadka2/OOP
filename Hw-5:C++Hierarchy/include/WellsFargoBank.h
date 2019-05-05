@@ -15,4 +15,4 @@ class WellsFargoBank: public UsBank
     public:
         WellsFargoBank();
         WellsFargoBank(string, double, double, double);
-}
+};

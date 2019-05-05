@@ -45,16 +45,21 @@ void UsBank::setBalance(double _balance)
 
 double UsBank::totalBalance()
 {
-    double totalBal = (this->balance * (interestRate/100)) - loans; 
+    double totalBal = this->balance +(this->balance * (interestRate/100)); 
+    this->balance = totalBal;
 }
 
-double UsBank::totalLoans()
+void UsBank::takeLoan()
 {
-    double loan;
+     double loan;
     cout << "Enter the loan you want to take from our bank: ";
     cin >> loan;
     cout << "The loan you borrowed from us is: " << loan << endl;
     this->loans = loan;
+}
+
+double UsBank::totalLoans()
+{
     return this->loans;
 }
 
@@ -62,41 +67,43 @@ void UsBank::loanPaymentOptions()
 {
     cout << "Welcome to Loan Payment department" << endl;
     cout << "====================================" << endl;
-    char options{};
-    cout << "Choose the following character to make a payment: ";
+    char options;
+    double totLoaPay{};
+    cout << "The options are follows: " << endl;
     choices();
     bool didChoose{false};
     do
     {
+        cout << "Choose the character to make a payment: ";
         cin >> options;
         switch(options)
         {
             case 'P': 
             case 'p': 
                 cout << "Thank you for your partial loan payment(25% of your balance)" << endl;
-                double totLoaPay = 25/100*totalLoans();
-                this->balance = balance - totLoaPay;
+                totLoaPay = (25/100) *this->loans;
+                this->loans = loans - totLoaPay;
                 didChoose = true;
                 break;
             case 'H':
             case 'h':
                 cout << "Thank you for your half loan payment(50% of your balance)" << endl;
-                double totLoaPay = 50/100*totalLoans();
-                this->balance = balance - totLoaPay;
+                totLoaPay = 50/100 * this->loans;
+                this->loans = this->loans - totLoaPay;
                 didChoose = true;
                 break;
-            case 'MH':
-            case 'mh':
+            case 'M':
+            case 'm':
                 cout << "Thank you for your more than half loan payment(75% of your balance)" << endl;
-                double totLoaPay = 75/100*totalLoans();
-                this->balance = balance - totLoaPay;
+                totLoaPay = 75/100* this->loans;
+                this->loans = loans - totLoaPay;
                 didChoose = true;
                 break;
             case 'F':
             case 'f':
                 cout << "Thank you for your full loan payment(100% of your balance)" << endl;
-                double totLoaPay = 100/100*totalLoans();
-                this->balance = balance - totLoaPay;
+                totLoaPay = 100/100* this->loans;
+                this->loans = loans - totLoaPay;
                 didChoose = true;
                 break;
             default:
@@ -125,4 +132,8 @@ void UsBank::display() const
     cout << "=====================================" << endl;
     cout << "Your total Bank Balance is: " << this->balance << endl;
     cout << "=====================================" << endl;
+    cout << "The total interest of the bank is: " << this->interestRate <<" %" << endl;
+    cout << "===============================================" << endl;
+    cout << "The total loans after adding interest: " << ((this->interestRate/100) * this->loans)+loans << endl;
+    
 }

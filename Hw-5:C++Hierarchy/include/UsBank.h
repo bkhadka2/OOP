@@ -19,8 +19,9 @@ class UsBank
         virtual void setInterest(double);
         virtual void setBalance(double);
         virtual double totalBalance();
+        virtual void takeLoan();
         virtual double totalLoans();
         virtual void loanPaymentOptions();
         virtual double withdraw();
         virtual void display() const;
-}
+};
