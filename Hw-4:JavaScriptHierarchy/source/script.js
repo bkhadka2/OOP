@@ -75,3 +75,25 @@ const obj = new Bus("Toyota", 2008, 35000, 10,true, 20);
 obj.busCapacity(10);
 obj.calculateAgeOfTheVehicle();
 obj.display();
+
+class Bike extends Vehicle
+{
+    constructor(name, year, cost, numberOfPassengerThatCanFit)
+    {
+        super(name, year, cost);
+        this.numberOfPassengerThatCanFit = numberOfPassengerThatCanFit;
+    }
+
+    BikeDesign(wheels, maxWeight)
+    {
+        console.log("The "+ wheels + " wheels Bike is currently carrying the weight of: " + maxWeight);
+    }
+
+}
+
+const obj2 = new Bike("Harley", 2005, 1500, 2);
+obj2.calculateAgeOfTheVehicle();
+obj2.BikeDesign(2,250);
+obj2.printInformationOnVehicle();
+
+exports.Vehicle = Vehicle;
