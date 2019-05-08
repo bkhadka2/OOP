@@ -1,3 +1,8 @@
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
 class Vehicle
 {
     constructor(name, year, cost)
@@ -7,6 +12,15 @@ class Vehicle
         this.cost = cost;
     }
 
+    vehicleCost()
+    {
+        readline.question(`what is the cost?`, (vCost) =>{
+            console.log(`The vehicle cost is ${vCost}`)
+            this.cost = vCost;
+            readline.close();
+        })
+        
+    }
     calculateAgeOfTheVehicle()
     {
         var age = new Date().getFullYear() - this.year;
@@ -29,9 +43,13 @@ class Vehicle
 Vehicle.greeting();
 const Dodge = new Vehicle("Dodge Avenger", 2010, 11000);
 Dodge.calculateAgeOfTheVehicle();
+console.log('====================================');
+Dodge.printInformationOnVehicle();
+Dodge.vehicleCost();
+console.log('====================================');
 Dodge.printInformationOnVehicle();
 
-
+//inheriting from Vehicle class(Base Class)
 class Bus extends Vehicle 
 {
     constructor(name, year, cost, numberOfPassengerThatCanFit, isElectric, mileage)
@@ -74,6 +92,7 @@ class Bus extends Vehicle
 const obj = new Bus("Toyota", 2008, 35000, 10,true, 20);
 obj.busCapacity(10);
 obj.calculateAgeOfTheVehicle();
+console.log('====================================');
 obj.display();
 
 class Bike extends Vehicle
@@ -94,6 +113,7 @@ class Bike extends Vehicle
 const obj2 = new Bike("Harley", 2005, 1500, 2);
 obj2.calculateAgeOfTheVehicle();
 obj2.BikeDesign(2,250);
+console.log('====================================');
 obj2.printInformationOnVehicle();
 
 exports.Vehicle = Vehicle;
