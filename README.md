@@ -12,6 +12,11 @@
 - [x] Test
 - [x] Screenshot of passing test
 
+## Homework-4 (EcmaScript "Hierarchy")
+- It is in the folder **Hw-4:JavaScript Hierarchy**
+- [x] Main Code
+- [x] Test
+
 ## Homework-5 (C++ "Single inheritance")
 
 - It is in the folder **Hw-5:C++Hierarchy**
@@ -19,6 +24,12 @@
 - [x] Test
 - [x] Screenshot of passing test
 
+## Homework-6 (C++ "Diamond Of Death")
+
+- It is in the folder **Hw-6:C++ Diamond Of Death**
+- [x] Main Code
+- [x] Test
+- [x] Screenshot of passing test
 
 
 
