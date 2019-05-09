@@ -9,6 +9,11 @@ BishalBank::BishalBank()
     this->CEO = "";
 }
 
+void BishalBank::DisplayName(string name)
+{
+    this->name = name;
+}
+
 BishalBank::BishalBank(double b, string n, string CEO)
 {
     this->CEO = CEO;

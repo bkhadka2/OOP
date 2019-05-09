@@ -18,6 +18,7 @@ class BishalBank : public UsBank, public WellsFargoBank
         BishalBank();
         BishalBank(double, string, string);
         virtual ~BishalBank();
+        virtual void DisplayName(string name) override;
         virtual void securityCenter();
         virtual void financialPlanning();
 };

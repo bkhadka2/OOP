@@ -16,6 +16,7 @@ int main(int argc, const char ** argv)
     ptr->deposit();
     ptr->withdraw();
     ptr->AccountType();
+    ptr->Transfer();
     ptr->AccountSummary();
     double fin = ptr->getBalance();
     assert(fin >= 0);

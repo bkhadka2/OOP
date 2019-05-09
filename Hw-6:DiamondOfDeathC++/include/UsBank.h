@@ -5,7 +5,7 @@
 
 using std::cout, std::cin, std::endl, std::string;
 
-class UsBank : public Bank
+class UsBank : virtual public Bank
 {
     using Bank::Bank;
     protected:

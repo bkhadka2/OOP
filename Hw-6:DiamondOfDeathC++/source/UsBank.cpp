@@ -61,7 +61,7 @@ void UsBank::Transfer()
 {
     double amount;
     string accountName;
-    cout << "Enter c-s or s-c to transer money from checking to saving and saving to checing respectively";
+    cout << "Enter c-s or s-c to transer money from checking to saving and saving to checing respectively: ";
     cin >> accountName;
     if(accountName == "c-s")
     {
