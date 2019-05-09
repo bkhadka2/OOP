@@ -18,4 +18,5 @@ class Bank
         virtual void withdraw();
         virtual void deposit();
         virtual void display() const;
+        double getBalance() const;
 };

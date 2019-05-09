@@ -57,7 +57,7 @@ void UsBank::AccountType()
     }
 }
 
-void UsBank::Transfer(string checking, string saving)
+void UsBank::Transfer()
 {
     double amount;
     string accountName;

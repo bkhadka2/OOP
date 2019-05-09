@@ -16,6 +16,6 @@ class UsBank : public Bank
         virtual ~UsBank();
         virtual void DisplayName(string) override;
         virtual void AccountType();
-        virtual void Transfer(string, string);
+        virtual void Transfer();
         virtual void AccountSummary() const;
 };

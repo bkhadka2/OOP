@@ -20,6 +20,11 @@ Bank::~Bank()
 
 }
 
+double Bank::getBalance() const
+{
+    return balance;
+}
+
 void Bank::DisplayName(string name)
 {
     cout << "Welcome to Main Bank" << endl;
