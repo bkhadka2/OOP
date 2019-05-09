@@ -5,6 +5,7 @@
 - [x] Main Code
 - [x] Test
 - [x] Screenshot of passing test
+- https://github.com/bkhadka2/bkhadka2-OOP/tree/master/Hw-1:JavaScript
 
 ## Homework-3 (C++ "Simple Object")
 - It is in the folder **Hw-3:C++**
