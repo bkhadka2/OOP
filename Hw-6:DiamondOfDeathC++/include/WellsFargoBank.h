@@ -3,19 +3,17 @@
 #include "../include/Bank.h"
 #pragma once
 
-using std::cout, std::cin, std::endl, std::string;
-
 class WellsFargoBank : virtual public Bank
 {
     using Bank::Bank;
     protected:
-        string status;
+        std::string status;
     public:
         WellsFargoBank();
-        WellsFargoBank(double, string, string);
+        WellsFargoBank(double, std::string, std::string);
         virtual ~WellsFargoBank();
-        virtual void DisplayName(string name) override;
+        virtual void DisplayName(std::string name) override;
         virtual void DepositChecks(double amount);
-        virtual string DisplayStatus();
+        virtual std::string DisplayStatus();
         virtual void display() const override; 
 };
