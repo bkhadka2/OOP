@@ -7,6 +7,13 @@
 - [x] Screenshot of passing test
 - [x] https://github.com/bkhadka2/bkhadka2-OOP/tree/master/Hw-1:JavaScript
 
+## Homework-2 (Java "Simple Object")
+
+- It is in the folder **Hw-2: Java**
+- [x] Main Code
+- [x] Test
+- https://github.com/bkhadka2/bkhadka2-OOP/tree/master/Hw-2:Java
+
 ## Homework-3 (C++ "Simple Object")
 - It is in the folder **Hw-3:C++**
 - [x] Main Code
@@ -39,11 +46,12 @@
 
 
 
-
-
+##<---------------------------------------->
+## Note for myself
 ## Making 3d images in web browser
 - ### webgl
 - ### threejs
 - ### autodesk
 - ### revit
 - ### 3ds max
+##<---------------------------------------->
