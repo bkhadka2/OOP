@@ -42,3 +42,10 @@
 - [x] Test
 - [x] Screenshot of passing test
 - [x] https://github.com/bkhadka2/bkhadka2-OOP/tree/master/Hw-6:DiamondOfDeathC%2B%2B
+
+## Final Project (Bridge Design Pattern: C++)
+
+- It is in the folder **FinalProject**
+- [x] Main Code
+- [x] Test
+- [x] https://github.com/bkhadka2/bkhadka2-OOP/tree/master/FinalProject
